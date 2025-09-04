@@ -33,9 +33,4 @@ This capstone project implements a fully serverless translation pipeline on AWS 
 - Python 3.9+ for Lambda function
 - Boto3 library
 
-## Setup and Deployment
 
-1. **Clone the Repository**
-```bash
-git clone <repository-url>
-cd serverless-translation-pipeline
