@@ -33,4 +33,50 @@ This capstone project implements a fully serverless translation pipeline on AWS 
 - Python 3.9+ for Lambda function
 - Boto3 library
 
+# Phase 1: Initial Setup & AWS Configuration
+
+This phase of the **Serverless Translation Pipeline** project focuses on laying the foundation for the system by setting up AWS resources, configuring tools, and defining permissions.
+
+## Objectives
+- Research AWS services required for the project.
+- Install and configure development tools.
+- Set up IAM policies with least-privilege access.
+- Ensure all setup is compliant with AWS Free Tier.
+
+---
+
+## Key Activities
+
+### 1. Researched AWS Services
+- **Amazon Translate**
+  - Real-time neural machine translation.
+  - Explored supported languages, text size limits (5,000 bytes/request), and Free Tier (2M characters/month for 12 months).
+- **Amazon S3**
+  - Object storage service with features like versioning, encryption, bucket policies, lifecycle rules, and event notifications for automation.
+
+### 2. IAM Policy with Scoped Access
+For secure and minimal permissions, the following IAM policies were drafted for the Lambda function:
+- **Amazon Translate**
+  - `translate:TranslateText`
+- **Amazon S3**
+  - `s3:GetObject`
+  - `s3:PutObject`
+  - `s3:ListBucket`
+- **CloudWatch Logs**
+  - Permissions to enable Lambda logging
+ 
+### 3. Installed & Configured Required Tools
+- **AWS CLI** – for interacting with AWS services locally.
+- **Terraform** – for Infrastructure-as-Code provisioning.
+- **Python 3.9+** – for developing Lambda functions.
+
+### 4. Configured AWS Credentials
+- Set up local credentials using:
+```bash
+`aws configure`
+
+
+
+
+
 
