@@ -1,3 +1,4 @@
+
 # Serverless Translation Pipeline with AWS Translate and Amazon S3
 
 ## Project Overview
@@ -36,12 +37,6 @@ This capstone project implements a fully serverless translation pipeline on AWS 
 # Phase 1: Initial Setup & AWS Configuration
 
 This phase of the **Serverless Translation Pipeline** project focuses on laying the foundation for the system by setting up AWS resources, configuring tools, and defining permissions.
-
-## Objectives
-- Research AWS services required for the project.
-- Install and configure development tools.
-- Set up IAM policies with least-privilege access.
-- Ensure all setup is compliant with AWS Free Tier.
 
 ---
 
